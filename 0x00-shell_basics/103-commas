@@ -1,3 +1,4 @@
 #!/bin/bash
-ls -m
+ls -1Apv | sed -e 's/\(.*\)\/*$/\1\//' | tr '\n' ','; echo
+
 
